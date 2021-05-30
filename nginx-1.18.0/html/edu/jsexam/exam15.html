@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>가변아규먼트 처리 함수 만들기</h1>
+<hr>
+<script>
+function out() {
+// 만든 흔적이 없는데 쓴다? 자동으로 자바스크립트가 만든! 함수가 호출될 때 전달된 아규먼트를 배열로 만들어 넣어준다.
+	document.write("아규먼트 갯수 : "+arguments.length+"<br>");
+	for(var i=0; i < arguments.length; i++) 
+		console.log(arguments[i]);
+
+	console.log('-----------------------'); // 개발자의 편의를 위해서 사용함.
+}
+
+out();
+out(10); out(10,20); out('a', 'b', 'c'); out(1,2,3,4,5,6,7,8);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

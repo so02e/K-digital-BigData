@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>자바스크립트의 변수 선언과 활용(2)</h1>
+<hr>
+<script>
+	document.write("<ul>");
+	// 방만 만든 상태
+	var v1;
+	document.write("<li>"+ v1 +"</li>");
+	document.write("<li>"+ typeof v1 +"</li>");
+	document.write("<li>"+ (v1+10) +"</li>"); // NAN이 산출됨.
+
+	v1 = 100;
+	document.write("<li>"+ v1 +"</li>");
+	document.write("<li>"+ typeof v1 +"</li>");
+	document.write("<li>"+ (v1+10) +"</li>");
+	v1 = true;
+	document.write("<li>"+ v1 +"</li>");
+	document.write("<li>"+ typeof v1 +"</li>");
+	document.write("<li>"+ (v1+10) +"</li>");
+	v1 = "가나다";
+	document.write("<li>"+ v1 +"</li>");	
+	document.write("<li>"+ typeof v1 +"</li>");
+	document.write("<li>"+ (v1+10) +"</li>");
+	document.write("</>ul>");
+</script>
+</body>
+</html>
+
+
+

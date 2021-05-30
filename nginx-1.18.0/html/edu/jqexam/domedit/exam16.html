@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('h1').first().remove(); // 모든 h1을 찾고,첫번째를 없애, 태그 자체를 없앤다.
+        	//$('div').remove(); // div에 매달려 있는 첫번째 h1, 두번째 h1가 없어진다.
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Header-0</h1>
+        <h1>Header-1</h1>
+    </div>
+</body>
+</html>
+
+
+

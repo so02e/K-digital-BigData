@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../util.js"></script>
+</head>
+<body>
+<h1 id="test">DOM객체를 찾자</h1>
+<h1>ㅋㅋㅋㅋㅋㅋㅋ</h1>
+
+<hr>
+
+<script>
+var dom = document.getElementsByTagName("h1"); // 모든 h1태그를 찾는다.
+write(dom, "h2"); // 유사배열(collection)리턴함
+write(dom[1], "h2"); // 두번째 h1을 출력하는데
+
+//새로운 내용  대입
+write(dom[1].textContent, "h2"); // innerText
+write(dom[1].innerHTML, "h2");
+
+hr();
+dom = document.getElementById("test"); // ID를 가지고 찾는다.
+
+write(dom, "h2");
+write(dom.textContent, "h2");
+
+window.setTimeout(function() {
+	dom.innerHTML = "오늘은 불금";
+	dom.style.color ="red";
+	dom.style.backgroundColor ="lime";
+}, 5000);
+</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 태그 학습</title>
+</head>
+<body>
+<h1>HTML의 입력폼 태그</h1>
+<hr>
+<h2>ID와 패스워드를 입력하세요</h2>
+    <!-- get 메서드를 적용해서 요청한다.  -->
+<form method = "get" action ="http://localhost:8000/edu/serverprogram">
+    <!-- text는 외부에 보이고, password 는 외부에 보이지 않는다. -->
+    ID <input type = "text" name ="account" required>
+    패스워드 <input type = "password" name ="pwd" required>
+    <input type="submit" value="로그인">
+        <!-- submit 은 버튼을 만들어주는 태그로, 그 라벨은 value로 .  -->
+    <input type="reset" value="재작성">
+    <!-- 사용자가 입력을 했는데, 초기 상태로 돌아가야하는 경우   -->
+</form>
+<hr>
+<h2>좋아하는 음식과 색상을 선택하세요</h2>
+<form method = "get" action ="http://localhost:8000/edu/serverprogram">
+    좋아하는 음식 : <br>
+        <!-- 다중선택   -->
+    <input type="checkbox" name = "food" value ="f1">불고기<br>
+    <input type="checkbox" name = "food" value ="f2">삼겹살<br>
+    <input type="checkbox" name = "food" value ="f3" checked>광어<br>
+    <input type="checkbox" name = "food" value ="f4">피자<br>
+    <br>
+    좋아하는 색상 : <br>
+        <!-- 하나만   -->
+    <input type="radio" name = "fcolor" value ="pink" checked>분홍색<br>
+    <input type="radio" name = "fcolor" value ="yellow">노랑색<br>
+    <input type="radio" name = "fcolor" value ="white">흰색<br>
+    <input type="radio" name = "fcolor" value ="mint">민트색<br>
+
+    태어난 년도를 입력하세요 :<br>
+    <input type = "number" name = "age" min = " 1990" max ="2021"><br>
+
+    태어난 년도를 선택하세요 :<br>
+    <select name = "year">
+        <option value = "1">1995</option>
+        <option value = "2">1996</option>
+        <option value = "3">1997</option>
+        <option value = "4">1998</option>
+        <option value = "5">1999</option>
+    </select><br><br>
+
+    남기려는 글을 입력하세요~ : <br>
+    <textarea name ="memo" rows ="5" cols = "50"> </textarea> <br>
+
+    생일을 선택하세요 : <br>
+    <input type = "datetime-local" name = "birth"><br>
+    <input type = "date" name = "birthday"><br>
+    <input type = "time" name = "time"><br><br>
+
+    <input type="submit" value="전송">
+    <input type="reset" value="재작성">
+</form>
+</body>
+</html>

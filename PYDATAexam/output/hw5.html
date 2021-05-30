@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_11ca678ed8ca4ae4b7e6ac974316f55a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_11ca678ed8ca4ae4b7e6ac974316f55a" ></div>
+        
+</body>
+<script>    
+    
+            var map_11ca678ed8ca4ae4b7e6ac974316f55a = L.map(
+                "map_11ca678ed8ca4ae4b7e6ac974316f55a",
+                {
+                    center: [37.2429025, 127.0779067],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c9741a68e54e4cebab107818b3f0fe0c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_11ca678ed8ca4ae4b7e6ac974316f55a);
+        
+    
+            var marker_86f15fd3653448ad832d4ba351924144 = L.marker(
+                [37.2429025, 127.0779067],
+                {}
+            ).addTo(map_11ca678ed8ca4ae4b7e6ac974316f55a);
+        
+    
+            var icon_bfbd73290ab84fe9a2d2efd61cb37909 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bookmark", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_86f15fd3653448ad832d4ba351924144.setIcon(icon_bfbd73290ab84fe9a2d2efd61cb37909);
+        
+    
+        var popup_872b5ec375a7408b849dd588fa64d4a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71733c5472a741e1b8524d3b22ce63da = $(`<div id="html_71733c5472a741e1b8524d3b22ce63da" style="width: 100.0%; height: 100.0%;"><div style="width:100px;color:green;text-align:center">경희대학교 국제캠퍼스</div></div>`)[0];
+            popup_872b5ec375a7408b849dd588fa64d4a5.setContent(html_71733c5472a741e1b8524d3b22ce63da);
+        
+
+        marker_86f15fd3653448ad832d4ba351924144.bindPopup(popup_872b5ec375a7408b849dd588fa64d4a5)
+        ;
+
+        
+    
+    
+            marker_86f15fd3653448ad832d4ba351924144.bindTooltip(
+                `<div>
+                     나의 학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
